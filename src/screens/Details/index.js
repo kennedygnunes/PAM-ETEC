@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, Text, Image, TouchableOpacity} from 'react-native'
+import {View, Text, Image, TouchableOpacity, StyleSheet} from 'react-native'
 import styles from '../../components/cardFilmes/style';
 import Stars from 'react-native-stars';
 import { useRoute } from '@react-navigation/native';
@@ -29,6 +29,14 @@ const routes = useRoute();
                 emptyStar={<FontAwesome name="star-o" size={25} color={'#fff'} />}
                 halfStar={<FontAwesome name="star-half-empty" size={25} color={'orange'} />}
             />
+
+          <Text style={styles.textNota}>
+               {route.params.nota}
+          </Text>
+
+          <Text style={styles.textTitulo}>
+               {route.params.titulo}
+          </Text>
 
           </View>
 

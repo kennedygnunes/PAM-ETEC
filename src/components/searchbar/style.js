@@ -8,22 +8,17 @@ const styles= StyleSheet.create({
         width:'90%',
         backgroundColor:"white",
         marginTop:30,
-       
         alignItems:"center",
         borderRadius:3
-     
-
     },
-    inputSearch:{
-        
+
+    inputSearch:{    
         height:35,
         width:'100%',
         marginLeft:5
-        
-
     }
 
 
-})
+});
 
 export default styles
